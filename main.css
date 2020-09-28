@@ -1,0 +1,499 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+input, textarea {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/photos/elearning-concept-online-classes-picture-id1140691163?k=6&m=1140691163&s=612x612&w=0&h=9vUB9OBA3903BHRLpKwJMbXTiIbOQZIdAp7mFkV4XNo=');
+    background-position: left;
+    background-size: cover;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+}
+
+#logo {
+    width: 40px;
+}
+
+.menu-item {
+    color: red;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.dropdown-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-wrapper:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    width: 150px;
+    border-top: 2px solid rgb(20, 20, 18);
+    padding: 20px;
+    position: absolute;
+    right: 24px;
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    display: none;
+}
+
+.dropdown a {
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.dropdown a:last-of-type {
+    border: 0;
+}
+
+.menu-item i {
+    padding-left: 4px;
+}
+
+.primary-button {
+    font-size: 12px;
+    font-weight: 600;
+    color:white;
+    background-color: rgb(170, 210, 54);
+    padding: 10px ;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+#landing-section {
+    width: 100%;
+    height: 100vh;
+}
+
+#main-text-wrapper {
+    color: rgb(255, 115, 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-text-wrapper h1 {
+    color: rgb(255, 115, 0);
+    width: 100%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 9px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+}
+
+#main-text-wrapper p {
+    color: rgb(20, 6, 6);
+    width: 100%;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 32px;
+}
+
+
+
+ 
+#steps-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.step-item {
+    width: 25%;
+    padding: 112px 48px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.step-item i {
+    font-size: 96px;
+    transition: all 0.3s;
+}
+
+.step-item:hover i{
+    transform: scale(1.1, 1.1);
+}
+
+.step-item h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.step-item p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+#first-step {
+    background-color: #5acda6;
+}
+
+#second-step {
+    background-color: #91ac41;
+}
+
+#third-step {
+    background-color: #e4b476;
+}
+
+#fourth-step {
+    background-color: #f69dad;
+}
+#fifth-step{
+    background-color: rosybrown;
+}
+
+
+
+
+
+#teacher-section {
+    width: 100%;
+    background-color: #f7eee2;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+#Subjects {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#teacher-section > h3 {
+    color: royalblue;
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#teacher-desc {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+}
+
+#teacher-name-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: stretch;
+    margin: 0 auto;
+}
+
+.teacher-name {
+    width: 25%;
+    text-align: center;
+    padding: 24px;
+}
+
+
+.teacher-name h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.teacher-name p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+}
+
+
+#stats-section {
+    width: 100%;
+    background-color:rgb(170, 210, 54);
+}
+
+#stats-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+}
+
+.stats-item {
+    width: 25%;
+    padding: 0 64px;
+}
+
+.stats-item h3 {
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.stats-item p {
+    color:grey;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+#video-section h3 {
+    color: red;
+    border: red;
+    border-color: red;
+    border-width: 1;
+    border-style: double;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#video-section > div {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#video-section iframe {
+    width: 100%;
+    height: 425px;
+}
+
+
+
+#address-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+#address-wrapper > div {
+    width: 50%;
+}
+
+#address-wrapper > div:last-of-type{
+    width: 40%;
+}
+
+.green-heading {
+    color: #91ac41;
+    
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.heading {
+    font-size: 600;
+    font-size: 44px;
+    margin: 0;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.address-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.address-lines {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin: 0;
+}
+#register-section{
+    background-color: burlywood;
+}
+#register-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+#register-wrapper>div{
+    width: 50%;
+}
+#register-wrapper > div:last-of-type{
+    width: 40%;
+}
+.input-box {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#btn-submit {
+    font-size: 15px;
+}
+
+
+
+
+
+footer {
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0px;
+}
+@media (max-width: 900px) {    
+    .menu-item {
+        display: none;
+    }
+
+    .primary-button {
+        margin-right: 0
+    }
+
+    #main-text-wrapper > h1 {
+        font-size: 28px;
+    }
+
+    #main-text-wrapper > p {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #steps-section {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .step-item {
+        width: 100%;
+    }
+
+    #teacher-section {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #teacher-section h3 {
+        font-size: 28px;
+    }
+
+    #teacher-name-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teacher-name {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    #stats-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #stats-item {
+        width: 100%;
+    }
+
+    #address-wrapper {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 16px;
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+
+    #address-wrapper > div {
+        width: 100%;
+    }
+
+    #address-wrapper > div:last-of-type {
+        width: 100%;
+    }
+    #register-wrapper {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 16px;
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+    #register-wrapper > div {
+        width: 100%;
+    }
+
+    #register-wrapper > div:last-of-type {
+        width: 100%;
+    }
+
+}
